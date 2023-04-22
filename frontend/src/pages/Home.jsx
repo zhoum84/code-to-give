@@ -1,15 +1,14 @@
 import React from 'react'
-
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
-import ProgressBar from '../components/ProgressBar'
+import Progress from '../components/Progress'
 
 function Home() {
   return (
     <div>
       <Sidebar />
       <Header />
-      <ProgressBar />
+      <Progress />
       Home
     </div>
   )
