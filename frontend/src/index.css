@@ -165,3 +165,31 @@ body{
   padding: 0 20px;
   text-align: center;
 }
+
+
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left,#00418b,#00234a);
+
+}
+#welcome img {
+  max-height:5%;
+  margin: 5px auto 0px auto;
+  
+}
+
+#maincontainer {
+  display: flex;
+  margin:auto;
+  width:75%;
+  height:100%;
+  box-shadow: 0px 2px 5px 2px black;
+  background-image: linear-gradient(to bottom left,#0057b8,#003b7f);
+  text-align: center;
+}
