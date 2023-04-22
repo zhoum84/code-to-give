@@ -208,3 +208,16 @@ body{
   position:relative;
 }
 
+.referall{
+  margin-left: 400px;
+  width: 800px;
+  color:rgb(39, 117, 70);
+  align-items: center;
+  position: absolute;
+}
+
+.section2{
+  margin-top: 50px;
+  color:#10558d
+}
+
