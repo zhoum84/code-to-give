@@ -22,8 +22,8 @@ body{
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
+    user-select: none;
 }
-
 
 .wrapper .sidebar ul li div{
   display: block;
@@ -34,6 +34,10 @@ body{
   position: relative;
 }
 
+.wrapper .sidebar ul li div{
+  cursor:pointer;
+}
+
 .wrapper .sidebar ul li div .icon{
   color: #dee4ec;
   width: 30px;
@@ -42,7 +46,8 @@ body{
 
 .sideTitle{
   color: #dee4ec;
-
+  display: flex;
+  justify-content: center;
 }
 .entry{
   padding-top: 4px;
