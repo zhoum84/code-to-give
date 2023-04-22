@@ -1,10 +1,10 @@
 import React from 'react';
-import Sidebar from './components/Sidebar'
-import Header from './components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FormPage from './pages/FormPage'
 import Welcome from './pages/Welcome'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';import './App.css';
 import Home from './pages/Home'
 import Login from './pages/Login'
+
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
             <Route path='/home' element={<Home/>} />
             <Route path='/login' element={<Login />} />
             <Route path='/' element={<Welcome />} />
+            <Route path='/formpage' element={<FormPage />} />
           </Routes>
       </Router>
     </>
