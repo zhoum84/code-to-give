@@ -158,6 +158,7 @@ body{
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 600px;
   text-align: center;
   position:relative;
 }
@@ -180,21 +181,30 @@ body{
   content: "You are " attr(value) "%" " done towards making your wish!";
 }
 
-/* .progress-bar{
-  width: 100%;
-  height: 20px;
-  border-radius: 30px;
-  background-color: #0c7db1;
-  position: bottom;
+.vscontainer{
+  width: 800px;
+  height: 500px;
+  margin-left: 400px;
+  align-items: center;
+  position:absolute;
+  margin-top: 0px;
+  
+}
+.vsbutton{
+  margin-left: 220px;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  background-color: rgb(243, 251, 131);
+  color: #0079cc;
+  position:relative;
 }
 
-.progress-bar-fill{
-  width: 50%;
-  background-color: #f0f67e;
-  position: relative;
+.vscontainer::before{
+  color:rgb(50, 3, 112);
+  margin-left: 220px;
+  font-size: x-large;
+  content: "Thank you for completing our form!!";
+  position:relative;
 }
 
-.progress-bar-percentrage{
-  background-color: #000507;
-  position: relative;
-} */
