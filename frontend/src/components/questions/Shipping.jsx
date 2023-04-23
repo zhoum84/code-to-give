@@ -16,12 +16,12 @@ const Shipping = () => {
                     checked={data.sameAsBilling}
                     onChange={handleChange}
                 />
-                Same as Billing Address
+                Hello {data.billFirstName}
             </label>
 
             <div className="split-container">
                 <div className="flex-col">
-                    <label htmlFor="shipFirstName">First Name</label>
+                    <label htmlFor="shipFirstName">What do you like to do?</label>
                     <input
                         type="text"
                         id="shipFirstName"
