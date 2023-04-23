@@ -6,7 +6,8 @@ import Login from './pages/Login'
 import Submission from './pages/Submission';
 import BeforeLeaving from './pages/BeforeLeaving';
 import FormPage from './pages/FormPage';
-import Chat from './pages/Chat'
+import Chat from './pages/Chat';
+import ViewForm from './pages/ViewForm';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/beforeleaving' element={<BeforeLeaving />}/>  
             <Route path='/formpage' element={<FormPage />} />
             <Route path='/chat' element={<Chat />} />
+            <Route path='/viewform' element={<ViewForm />} />
           </Routes>
       </Router>
     </>

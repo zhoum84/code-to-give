@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 *{
     list-style: none;
     text-decoration: none;
@@ -528,4 +527,25 @@ body{
     transform: translateX(-100%);
     left: 100%;
   }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+
+
+
+p {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+  margin-left: 220px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 15em;
+  font-weight: 100;
+  margin-left: 300px;
+  
 }
