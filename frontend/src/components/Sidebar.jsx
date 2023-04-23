@@ -1,10 +1,13 @@
 import React from "react";
-import { FaUser, FaBars, FaHome, FaDesktop, FaUserFriends, FaTachometerAlt, FaDatabase, FaChartLine, FaUserShield, FaCog } from "react-icons/fa";
-import logo from "../resources/logo-white.png";
-import { Flexboard, FlexboardProvider, FlexboardFrame, ResizerType, Position } from '@dorbus/flexboard';
+import { Link, useNavigate } from 'react-router-dom'
+import {FaFile, FaUser, FaBars, FaHome, FaDesktop, FaUserFriends, FaTachometerAlt, FaDatabase, FaChartLine, FaUserShield, FaCog } from "react-icons/fa";
 
 function Sidebar() {
+
+    const navigate = useNavigate();
+
   return (
+    
     <div className='wrapper'>
       <div className='sidebar'>
       <div className='sideTitle'>Menu</div>
@@ -30,8 +33,8 @@ function Sidebar() {
                 </li>
                 <li>
                     <div className="entry">
-                        <span className="icon"><FaTachometerAlt /></span>
-                        <span className="item">Perfomance</span>
+                        <span className="icon"><FaFile /></span>
+                        <span className="item">Files</span>
                     </div>
                 </li>
                 <li>

@@ -1,18 +1,15 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
-import Progress from '../components/Progress'
+import Referall from '../components/Referall'
 
-function Home() {
+function BeforeLeaving() {
   return (
     <div>
-      <Sidebar />
-      <Header />
-      <Progress />
-
-      Home
+    <Sidebar />
+    <Header />
+    <Referall />
     </div>
   )
 }
-
-export default Home
+export default BeforeLeaving
