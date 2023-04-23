@@ -1,7 +1,5 @@
 import React from "react";
 import { FaUser, FaBars, FaHome, FaDesktop, FaUserFriends, FaTachometerAlt, FaDatabase, FaChartLine, FaUserShield, FaCog } from "react-icons/fa";
-import logo from "../resources/logo-white.png";
-import { Flexboard, FlexboardProvider, FlexboardFrame, ResizerType, Position } from '@dorbus/flexboard';
 
 function Sidebar() {
   return (
