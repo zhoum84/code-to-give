@@ -186,11 +186,60 @@ body{
   gap: 1rem;
 }
 
+
+.question {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+
+  font-size: 100px;
+}
+
+.transition-text{
+  animation: fadeInOut 4s linear 1 forwards;
+
+}
+
+.field-input{
+  align-self: center;
+  text-align: center;
+  width: 50%;
+}
+
+.animated {
+  overflow: hidden;
+  width: 11rem;
+  white-space: nowrap;
+}
+
+.animated > * {
+  display: inline-block;
+  position: relative;
+  animation: 3s linear 0s infinite alternate move;
+}
+
+.animated > *.min {
+  min-width: 100%;
+}
+
+.floater{
+  left: 100%;
+  animation-iteration-count: 1;
+  animation: moveIn ease 2s;
+}
+
+.parameter{
+  font-size: large;
+}
+
 .flex-col {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.35rem;
   width: 100%;
+  text-align: center;
 }
 
 input:invalid {
@@ -316,4 +365,54 @@ body{
   border-radius: 2px;
   display: table;
 
+}
+
+@keyframes fadeInAnimation {
+  
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveIn {
+  0%,
+  25% {
+    transform: translateX(100%);
+    left: 0%;
+  }
+  75%,
+  100% {
+    transform: translateX(0%);
+    left: 100%;
+  }
+}
+
+@keyframes moveOut {
+  0%,
+  25% {
+    transform: translateX(100%);
+    left: 0%;
+  }
+  75%,
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+  }
 }

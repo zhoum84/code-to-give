@@ -6,7 +6,7 @@ const FormContext = createContext({})
 export const FormProvider = ({ children }) => {
 
     const title = {
-        0: 'Billing Info',
+        0: 'Lets begin...',
         1: 'Shipping Info',
         2: 'Opt-In'
     }
@@ -16,6 +16,22 @@ export const FormProvider = ({ children }) => {
     const [data, setData] = useState({
         billFirstName: "",
         billLastName: "",
+        favColor: "",
+        favBook: "",
+        favGame: "",
+        favFood: "",
+        favRestaurant: "",
+        cakeCandy: "",
+        favSnack: "",
+        favClass: "",
+        favMusic: "",
+        favHobby: "",
+        favMovie: "",
+        favShow: "",
+        favActor: "",
+        favSport: "",
+        favAnimal: "",
+        favOther: "",
         billAddress1: "",
         billAddress2: "",
         billCity: "",

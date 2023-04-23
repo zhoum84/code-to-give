@@ -6,7 +6,7 @@ const Shipping = () => {
     const { data, handleChange } = useFormContext()
 
     const content = (
-        <>
+        <div className='floater'>
         
             <label htmlFor="sameAsBilling">
                 <input
@@ -157,7 +157,7 @@ const Shipping = () => {
                 onChange={handleChange}
                 disabled={data.sameAsBilling}
             />
-        </>
+        </div>
     )
 
     return content
