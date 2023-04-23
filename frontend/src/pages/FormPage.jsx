@@ -7,7 +7,6 @@ import React from 'react';
 function FormPage() {
   return (
     <div className='marker'>
-      <div>
         <Header />
         <Sidebar />
         <div className='conform'>
@@ -15,8 +14,6 @@ function FormPage() {
               <Form />
           </FormProvider>
          </div>
-      </div>
-      
     </div>
   );
 }

@@ -1,11 +1,15 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom'
-import {FaFile, FaUser, FaBars, FaHome, FaDesktop, FaUserFriends, FaTachometerAlt, FaDatabase, FaChartLine, FaUserShield, FaCog } from "react-icons/fa";
+import {FaFile, FaBars, FaHome, FaDesktop, FaUserFriends, FaTachometerAlt, FaDatabase, FaChartLine, FaUserShield, FaCog } from "react-icons/fa";
 
 function Sidebar() {
 
     const navigate = useNavigate();
-
+    const onPress = (page) =>{
+        console.log('click');
+        navigate(`/${page}`);
+    }
+    
   return (
     
     <div className='wrapper'>
@@ -14,10 +18,12 @@ function Sidebar() {
 
                 <ul>
                 <li>
-                    <div className="entry">
-                        <span className="icon"><FaHome/></span>
-                        <span className="item">Home</span>
-                    </div>
+                    <Link to='/home'>
+                        <div className="entry">
+                            <span className="icon"><FaHome/></span>
+                            <span className="item">Home</span>
+                        </div>
+                    </Link>
                 </li>
                 <li>
                     <div className="entry">
@@ -26,22 +32,28 @@ function Sidebar() {
                     </div>
                 </li>
                 <li>
-                    <div className="entry">
-                        <span className="icon"><FaUserFriends/></span>
-                        <span className="item">People</span>
-                    </div>
+                    <Link to='/chat'>
+                        <div className="entry" >
+                            <span className="icon"><FaUserFriends/></span>
+                            <span className="item">People</span>
+                        </div>
+                    </Link> 
                 </li>
                 <li>
-                    <div className="entry">
-                        <span className="icon"><FaFile /></span>
-                        <span className="item">Files</span>
-                    </div>
+                    <Link to='/formpage'>
+                        <div className="entry" >
+                            <span className="icon"><FaFile /></span>
+                            <span className="item">Complete a Form</span>
+                        </div>
+                    </Link>
                 </li>
                 <li>
-                    <div className="entry">
-                        <span className="icon"><FaDatabase/></span>
-                        <span className="item">Development</span>
-                    </div>
+                    <Link to='/submission'>
+                        <div className="entry">
+                            <span className="icon"><FaDatabase/></span>
+                            <span className="item">Your Files</span>
+                        </div>
+                    </Link>
                 </li>
                 <li>
                     <div className="entry">

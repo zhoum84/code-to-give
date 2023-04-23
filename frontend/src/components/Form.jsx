@@ -1,6 +1,8 @@
 import FormInputs from './FormInputs'
 import useFormContext from "../hooks/useFormContext"
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
 
@@ -26,6 +28,9 @@ const Form = () => {
         console.log(JSON.stringify(data))
     }
 
+    const saveProgress = () =>{
+        toast("Your progess has been saved!")
+    }
 
     const content = (
         <form className="form flex-col" onSubmit={handleSubmit}>
@@ -45,7 +50,10 @@ const Form = () => {
 
 
             <FormInputs/>
-
+            <div className="button-container">
+                <button className={'btn-edit'} onClick={saveProgress}>Save Progress</button>
+                <ToastContainer />
+            </div>
         </form>
     )
 

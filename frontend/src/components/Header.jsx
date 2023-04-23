@@ -1,15 +1,21 @@
 import React from 'react'
-import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa'
+import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Header() {
   return (
         <header className='header'>
-          
-          <div>
-            
-          </div>
+                      
+        <div></div>
+        <div>
+        <div className='header-center'>Make-A-Wish</div>
+        </div>
           <ul>
+          
+              <li>
+                  <FaUser /> Your Name
+              </li>
+
             <li>
               
               <li>

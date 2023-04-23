@@ -1,18 +1,16 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
-import Progress from '../components/Progress'
 
-function Home() {
+function Chat() {
   return (
     <div>
       <Sidebar />
       <Header />
-      <Progress percent={50} />
 
-      Home
+      Chat
     </div>
   )
 }
 
-export default Home
+export default Chat
