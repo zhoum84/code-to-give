@@ -154,19 +154,23 @@ body{
 }
 
 .progress-container {
-  width: 100%;
+  width: 1000px;
+  margin-left: 1000px;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-top: 600px;
+  margin-top: 200px;
   text-align: center;
-  position:relative;
+  position: relative;
 }
 .progress{
   width: 100%;
-  border-radius: 10px;
+  height: 80px;
+  border-radius: 100px;
 }
 .progress::-webkit-progress-bar{
+  margin-top:50px;
+  margin-left: 150px;
   background-color:#0079cc;
   border-radius: 10px;
 
@@ -178,12 +182,15 @@ body{
 }
 
 .progress::after{
+  margin-left: 250px;
+  font-weight: bold;
   content: "You are " attr(value) "%" " done towards making your wish!";
+  font-size: 30px;
 }
 
 .vscontainer{
-  width: 800px;
-  height: 500px;
+  width: 1000px;
+  height: 1000x;
   margin-left: 400px;
   align-items: center;
   position:absolute;
@@ -192,18 +199,19 @@ body{
 }
 .vsbutton{
   margin-left: 220px;
-  margin-top: 10px;
-  width: 90px;
-  height: 30px;
+  margin-top: 50px;
+  width: 400px;
+  height: 200px;
   background-color: rgb(243, 251, 131);
   color: #0079cc;
   position:relative;
+  font-size: 40pt;
 }
 
 .vscontainer::before{
   color:rgb(50, 3, 112);
-  margin-left: 220px;
-  font-size: x-large;
+  margin-left:70px;
+  font-size: 50px;
   content: "Thank you for completing our form!!";
   position:relative;
 }
@@ -212,12 +220,25 @@ body{
   margin-left: 400px;
   width: 800px;
   color:rgb(39, 117, 70);
+  font-size: 25px;
   align-items: center;
   position: absolute;
 }
 
+.referall::before{
+  content: "Thank you!!!";
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  margin-left: 300px;
+}
+
+.section1{
+  margin-top: 30px;
+}
+
 .section2{
   margin-top: 50px;
-  color:#10558d
+  color:#10558d;
 }
 
