@@ -14,7 +14,7 @@ body{
 }
 
 .wrapper .sidebar{
-    background: rgb(5, 68, 104);
+    background: rgb(8, 99, 151);
     position: fixed;
     top: 0;
     left: 0;
@@ -207,28 +207,34 @@ body{
 }
 
 .vscontainer{
-  width: 1000px;
-  height: 1000x;
-  margin-left: 400px;
   align-items: center;
-  position:absolute;
-  margin-top: 0px;
-  
+    
 }
 .vsbutton{
-  margin-left: 220px;
-  margin-top: 50px;
+  margin-left:450px;
   width: 400px;
   height: 200px;
-  background-color: rgb(243, 251, 131);
-  color: #0079cc;
-  position:relative;
   font-size: 40pt;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #0079cc;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
 }
 
+.vsbutton:hover {
+  transform: scale(0.99);
+}
 .vscontainer::before{
   color:rgb(50, 3, 112);
-  margin-left:70px;
+  margin-left:225px;
   font-size: 50px;
   content: "Thank you for completing our form!!";
   position:relative;
@@ -462,7 +468,7 @@ body{
   width: calc(100% - 225px);
   height: 700px;
   border-radius: 200;
-  background-color: whitesmoke;
+  background-color: rgb(242, 242, 242);
   align-items: flex-end;
   position:right;
 }

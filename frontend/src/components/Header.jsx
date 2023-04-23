@@ -19,10 +19,12 @@ function Header() {
             <li>
               
               <li>
+                <Link to='/'>
                   <button className='btn'> 
                     <FaSignOutAlt /> Logout
                   </button>
-                </li>
+                </Link>
+              </li>
                
             </li>
           </ul>
