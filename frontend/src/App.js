@@ -1,7 +1,4 @@
 import React from 'react';
-import Sidebar from './components/Sidebar'
-import Header from './components/Header'
-import Progress from './components/Progress'
 import Welcome from './pages/Welcome'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
@@ -10,7 +7,6 @@ import Submission from './pages/Submission';
 import BeforeLeaving from './pages/BeforeLeaving';
 import FormPage from './pages/FormPage';
 
-import React from 'react';
 function App() {
   return (
     <>
