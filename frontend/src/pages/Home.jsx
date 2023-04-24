@@ -9,8 +9,6 @@ function Home() {
       <Sidebar />
       <Header />
       <Progress percent={50} />
-
-      Home
     </div>
   )
 }

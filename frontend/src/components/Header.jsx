@@ -10,7 +10,7 @@ function Header() {
         <div></div>
         <div>
         <div className='header-center'>
-          <img src={logo} height={100} width={400} alt='logo'/>
+          <img src={logo} height={100} width={420} alt='logo'/>
         </div>
 
         </div>

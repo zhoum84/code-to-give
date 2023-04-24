@@ -398,7 +398,6 @@ select {
   margin: auto;
   padding: 0.75rem;
   border: 1px solid #000;
-  border-radius: 10px;
   background-color: whitesmoke;
 }
 
@@ -836,4 +835,35 @@ border-radius:10px;
 }
 .signup-container .signup-info span .fa {
   color: #EF3B3A;
+}
+
+
+/*upon first signup/login*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.hello-background{
+  background-color: whitesmoke;
+  font: 'Poppins';
+  align-self: center;
+  margin-top: 20%;
+}
+
+.vanisher{
+  font-size: 80px;
+  -webkit-animation: fadeinout 3s linear forwards;
+  animation: fadeinout 3s linear forwards;
+  animation-delay: attr(value);
+  background: whitesmoke;
+  position: relative;
+}
+
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
 }
