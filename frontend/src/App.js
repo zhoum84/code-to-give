@@ -7,6 +7,7 @@ import Submission from './pages/Submission';
 import BeforeLeaving from './pages/BeforeLeaving';
 import FormPage from './pages/FormPage';
 import Chat from './pages/Chat'
+import Signup from './pages/Signup'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/home' element={<Home/>} />
             <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
             <Route path='/' element={<Welcome />} />
             <Route path='/submission' element={<Submission />}/>  
             {/* people shouldn't have direct access to submission page directly */}

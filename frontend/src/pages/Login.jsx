@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const MyLottieAnimation = React.lazy(() => import('../components/lottie'));
 
@@ -30,11 +31,15 @@ function Login() {
         <form>
           <input type="text"  placeholder="username"  onChange={usernameChange} value={username}/>
           <input type="password" name='password' id="password" placeholder="password" onChange={passwordChange} value={password}/>
-          <button>LOGIN</button>
-          <p className="message"></p>
+          <Link to='/home'>
+           <button>LOGIN</button>
+           <p className="message"></p>
+          </Link>
         </form>
         <form className="login-form">
-          <button type="button" onClick="window.location.href='signup.html'">SIGN UP</button>
+          <Link to='/signup'>
+            <button type="button" onClick="window.location.href='signup.html'">SIGN UP</button>
+          </Link>
         </form>
       </div>
       </div>
