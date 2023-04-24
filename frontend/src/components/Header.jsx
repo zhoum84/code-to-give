@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../resources/logo-blue-transparent.png'
 import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -8,7 +9,10 @@ function Header() {
                       
         <div></div>
         <div>
-        <div className='header-center'>Make-A-Wish</div>
+        <div className='header-center'>
+          <img src={logo} height={100} width={400} alt='logo'/>
+        </div>
+
         </div>
           <ul>
           

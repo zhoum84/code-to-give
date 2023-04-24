@@ -328,7 +328,7 @@ body{
 .floater{
   left: 100%;
   animation-iteration-count: 1;
-  animation: moveIn ease 2s;
+  animation: moveIn ease 1.5s;
 }
 
 .parameter{
