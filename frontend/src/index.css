@@ -170,8 +170,7 @@ body{
 
 #welcome {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to bottom left,#00418b,#00234a);
@@ -180,6 +179,8 @@ body{
 
 #welcome .sideimage {
   overflow: hidden;
+  height: 100%;
+  max-width: 25vw;
 }
 
 #welcome .logo {
@@ -194,11 +195,12 @@ body{
 #maincontainer {
   display: flex;
   flex-direction: column;
-  width:60%;
+  width:50%;
   height:100%;
   box-shadow: 0px 2px 5px 2px black;
   background-color: white;
   text-align: center;
+  z-index: 10;
 }
 
 .welcomepage-item {

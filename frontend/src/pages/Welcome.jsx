@@ -4,7 +4,7 @@ function Welcome() {
   return (
     <div id="welcome">
 
-        <img src={require('../resources/kid-smiling-1.jpg')} />
+        <img className="sideimage" src={require('../resources/kid-smiling-1.jpg')} />
         
         <div id="maincontainer">
             <img className="logo" src={require('../resources/logo-blue-transparent.png')} />
