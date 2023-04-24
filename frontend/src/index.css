@@ -21,7 +21,6 @@ body{
     width: 225px;
     height: 100%;
     padding: 20px 0;
-    margin-right: 5px;
     transition: all 0.5s ease;
     user-select: none;
 }
@@ -159,168 +158,82 @@ body{
   transform: scale(0.98);
 }
 
-.progress-container {
-  width: 1000px;
-  margin-left: 1000px;
+.container {
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-top: 200px;
   text-align: center;
-  position: relative;
-}
-.progress{
-  width: 100%;
-  height: 80px;
-  border-radius: 100px;
-}
-.progress::-webkit-progress-bar{
-  margin-top:50px;
-  margin-left: 150px;
-  background-color:#0079cc;
-  border-radius: 10px;
-
-}
-.progress::-webkit-progress-value{
-  background-color: rgb(243, 251, 131);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
-.progress::after{
-  margin-left: 250px;
-  font-weight: bold;
-  content: "You are " attr(value) "%" " done towards making your wish!";
-  font-size: 30px;
+
+
+#welcome {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left,#00418b,#00234a);
+
 }
 
-.vscontainer{
-  width: 1000px;
-  height: 1000x;
-  margin-left: 400px;
-  align-items: center;
-  position:absolute;
-  margin-top: 0px;
+#welcome .sideimage {
+  overflow: hidden;
+  height: 100%;
+  max-width: 25vw;
+}
+
+#welcome .logo {
+  max-height:7%;
+  margin: 3% auto 0px auto;
   
 }
-.vsbutton{
-  margin-left: 220px;
-  margin-top: 50px;
-  width: 400px;
-  height: 200px;
-  background-color: rgb(243, 251, 131);
-  color: #0079cc;
-  position:relative;
-  font-size: 40pt;
+#welcome button {
+  margin: 0 3% 0 3%;
 }
 
-.vscontainer::before{
-  color:rgb(50, 3, 112);
-  margin-left:70px;
-  font-size: 50px;
-  content: "Thank you for completing our form!!";
-  position:relative;
+#maincontainer {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  height:100%;
+  box-shadow: 0px 2px 5px 2px black;
+  background-color: white;
+  text-align: center;
+  z-index: 10;
 }
 
-.referall{
-  margin-left: 400px;
-  width: 800px;
-  color:rgb(39, 117, 70);
-  font-size: 25px;
+.welcomepage-item {
+  display:flex;
+  justify-content: center;
+  margin:2%;
+}
+
+.btn-big-blue {
+  padding: 10px 20px;
+  border: 1px solid #00234b;
+  border-radius: 5px;
+  background: #0057B8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
   align-items: center;
-  position: absolute;
+  justify-content: center;
+  transition: all 0.5s ease;
 }
 
-.referall::before{
-  content: "Thank you!!!";
-  font-size: 50px;
-  font-style: italic;
-  font-weight: bolder;
-  margin-left: 300px;
+.btn-big-blue:hover {
+  transform: scale(1.01);
 }
 
-.section1{
-  margin-top: 30px;
+.btn-big-blue:active {
+  transform: scale(.95);
 }
 
-.section2{
-  margin-top: 50px;
-  color:#10558d;
-}
-
-
-
-/* Form stuff
-*/
-
-.remove-button {
-  display: none;
-}
-
-.offscreen {
-  position: absolute;
-  left: -10000px;
-}
-
-.split-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-
-.question {
-  opacity: 0;
-  animation: fadeInAnimation ease 2s;
-  animation-delay: 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-
-  font-size: 100px;
-}
-
-.transition-text{
-  animation: fadeInOut 4s linear 1 forwards;
-
-}
-
-.field-input{
-  align-self: center;
-  text-align: center;
-  width: 50%;
-}
-
-.animated {
-  overflow: hidden;
-  width: 11rem;
-  white-space: nowrap;
-}
-
-.animated > * {
-  display: inline-block;
-  position: relative;
-  animation: 3s linear 0s infinite alternate move;
-}
-
-.animated > *.min {
-  min-width: 100%;
-}
-
-.floater{
-  left: 100%;
-  animation-iteration-count: 1;
-  animation: moveIn ease 2s;
-}
-
-.parameter{
-  font-size: large;
-}
-
-.flex-col {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 0.35rem;
-  width: 100%;
-  text-align: center;
+#welcome p {
+  margin:0 15% 0 15%;
 }
